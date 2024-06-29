@@ -1,22 +1,52 @@
+html{
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
 main{
     padding: 20px;
 }
+.space{
+    width: 100%;
+    height: 50px;
+}
 
 .nav-container{
+    left: 0px;
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    z-index: 1000;
+    border-bottom: solid 1px;
+    padding: 10px;
+    background-color: rgb(31, 31, 21);
+
+    
 }
 .logo{
     width: 50px;
     height: 50px;
-    border: 1px solid;
+    margin-left: 30px;
+    border-radius: 50%;
+    background-image: url("/Asset/Logo-RevoU-5.png");
+    background-size: cover;
 }
 nav a{
     padding-left: 20px;
     padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     border-left: 1px solid;
-    border-color: rgba(63, 64, 71, 0.534);
+    border-color: rgba(142, 145, 131, 0.534);
+    color: rgb(222, 223, 220);
+    text-decoration: none;
+    
+    
+}
+.Massage{
+    margin-right: 10px;
 }
 .gambar{
     width: 100%;
