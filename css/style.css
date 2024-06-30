@@ -21,7 +21,7 @@ main{
     z-index: 1000;
     border-bottom: solid 1px;
     padding: 10px;
-    background-color: rgb(31, 31, 21);
+    background-color: rgb(24, 24, 15);
 
     
 }
@@ -38,12 +38,19 @@ nav a{
     padding-right: 20px;
     padding-top: 8px;
     padding-bottom: 8px;
-    border-left: 1px solid;
+    border-right: 1px solid;
     border-color: rgba(142, 145, 131, 0.534);
     color: rgb(222, 223, 220);
     text-decoration: none;
+    transition: all 500ms ease-in-out 0s;
     
     
+}
+nav a:hover{
+    
+    color: rgb(161, 161, 9);
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 .Massage{
     margin-right: 10px;
@@ -53,9 +60,10 @@ nav a{
     height: 500px;
     border: 1px solid;
 }
-article{
+.our-profile{
     display: flex;
     justify-content: space-evenly;
+    padding: 20px;
     
 
 
@@ -78,4 +86,35 @@ article{
 }
 .jarak{
     flex: 2;
+}
+.achievment{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    
+}
+
+.achievment-container{
+    text-align: center;
+    text-align:-webkit-center;
+    border: solid 1px;
+    padding: 21px;
+    border-radius: 10%;
+
+}
+
+.line{
+    border: 1px solid;
+    border-color: rgb(219, 224, 214);
+}
+
+.picture-achievment{
+    width: 100px;
+    height: 100px;
+    border: solid 1px;
+    border-radius: 50%;
+}
+.text{
+    width: 200px;
+    font-size: 13;
 }
