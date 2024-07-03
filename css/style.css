@@ -2,7 +2,7 @@ html{
     font-family:Verdana, Geneva, Tahoma, sans-serif
 }
 main{
-    padding: 20px;
+    padding: 3dvh;
 }
 .space{
     width: 100%;
@@ -14,11 +14,9 @@ main{
     top: 0;
     display: flex;
     justify-content: space-between;
+    position: absolute;
     align-items: center;
-    position: fixed;
     width: 100%;
-    height: auto;
-    z-index: 1000;
     border-bottom: solid 1px;
     padding: 10px;
     background-color: rgb(24, 24, 15);
@@ -38,7 +36,6 @@ nav a{
     padding-right: 20px;
     padding-top: 8px;
     padding-bottom: 8px;
-    border-right: 1px solid;
     border-color: rgba(142, 145, 131, 0.534);
     color: rgb(222, 223, 220);
     text-decoration: none;
@@ -52,9 +49,7 @@ nav a:hover{
     padding-top: 15px;
     padding-bottom: 15px;
 }
-.Massage{
-    margin-right: 10px;
-}
+
 .gambar{
     width: 100%;
     height: 500px;
@@ -68,7 +63,7 @@ nav a:hover{
 
 
 }
-.profile{
+.profile1, .profile2, .profile3{
    text-align: center;
    text-align:-webkit-center;
    flex: 1;
@@ -76,7 +71,7 @@ nav a:hover{
     
   
 }
-.profile1{
+.bingkai{
     width: 150px;
     height: 150px;
     border: 1px solid;
@@ -97,9 +92,7 @@ nav a:hover{
 .achievment-container{
     text-align: center;
     text-align:-webkit-center;
-    border: solid 1px;
     padding: 21px;
-    border-radius: 10%;
 
 }
 
@@ -117,4 +110,51 @@ nav a:hover{
 .text{
     width: 200px;
     font-size: 13;
+}
+#massage{
+    display: flex;
+}
+.massage-container{
+    border-right: 1px solid;
+    width: 45%;
+    padding: 30px;
+}
+form label span{
+    margin-left: 23px;
+}
+table tr td{
+    padding-bottom: 20;
+}
+@media screen and (max-width: 600px) {
+    .logo{
+        margin-bottom: 20px;
+    }
+    .nav-container{
+        flex-direction: column;
+    }
+    .space{
+        margin-bottom: 50px;
+    }
+    .our-profile{
+        flex-direction: column;
+    }
+    .profile1{
+        margin-right: 200px;
+    }
+    .profile2{
+        margin-left: 150px;
+    }
+    .profile3{
+        margin-right: 150px;
+    }
+    .achievment{
+        flex-direction: column;
+    }
+    .massage-container{
+        width: 100%;
+        border-bottom: solid 1px;
+        border-right: 0;
+    }
+    
+    
 }
