@@ -22,10 +22,16 @@
         <section id="greeting">
              <!--content greeting-->
             <header>
-                <h1>Hii!, Welcome to our website</h1>
-                <p>Enjoy your comfotable</p>
+                    <h1>Hii! <span class="user-name" style="display: inline;"></span> This is my first web</h1>
+                    <p>Hope you enjoy it :</p>    
             </header>
-            <div class="gambar"></div>
+            <div class="container-img">
+                <div class="list-img" style="background-image: url(/Asset/Logo-RevoU-5.png);"></div>
+                <div class="list-img" style="background-image: url(/Asset/sean-oulashin-KMn4VEeEPR8-unsplash.jpg);"></div>
+                <div class="list-img" style="background-image: url(/Asset/subtle-cinematics-KEI-VNDi0_g-unsplash.jpg);"></div>
+            </div>
+            <button  type="button" onclick="nextslide(1)">next</button>
+            <button type="button" onclick="nextslide(-1)">prev</button>
         </section>
         <hr>
         <!--Our profile-->
@@ -102,8 +108,7 @@
                         </tr>
                         <tr>
                             <td><label for="jk">Jenis Kelamin</label></td>
-                            <td> : <input type="radio" id="jk"> Pria <input type="radio" id="jk"> Wanita</td>
-    
+                            <td> : <input type="radio" id="Pria" name="gender" value="pria"> Pria <input type="radio" id="Wanita" name="gender" value="Wanita"> Wanita</td>
                         </tr>
 
                     </table>
@@ -111,15 +116,27 @@
                     <table>
                         <tr>
                             <td style="vertical-align: top;">pesan <span style="margin-left: 56px;"> : </span> </td>
-                            <td><textarea name="" id="" cols="20" rows="5"></textarea></td>
+                            <td><textarea name="" id="pesan" cols="20" rows="5"></textarea></td>
                         </tr>
-
+                        <tr>
+                            <td>
+                                <button type="reset" class="btn" onclick="hasil()">send</button>
+                            </td>
+                        </tr>
+    
                     </table>
+
+                </div>
+                <div class ="con-result">
+                    <div class="first-name-target"></div>
+                    <div class="last-name-target"></div>
+                    <div class="jenis-kelamin-target"></div>
+                    <div class="pesan-target"></div>    
                 </div>
             </article>
         </section>
     </main>
-    <script></script>
+    <script src="/JS/script.js"></script>
 
 </body>
 </html>
